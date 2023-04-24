@@ -8,6 +8,8 @@
 
 .advantages__list {
   @include list-reset;
+  padding-top: 17px;
+  padding-bottom: 4px;
 }
 
 .advantages__item {
@@ -17,6 +19,15 @@
     background-color: $bg-accent1;
   }
 }
+
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
 
 .advantages__image {
   display: block;
