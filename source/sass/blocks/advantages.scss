@@ -1,0 +1,34 @@
+.advantages {
+  text-align: center;
+}
+
+.advantages__header {
+  padding: 32px 18px 53px;
+}
+
+.advantages__list {
+  @include list-reset;
+  padding-top: 17px;
+  padding-bottom: 4px;
+}
+
+.advantages__item {
+  background-color: $bg-accent2;
+
+  &--has-photo {
+    background-color: $bg-accent1;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+
+.advantages__image {
+  display: block;
+}

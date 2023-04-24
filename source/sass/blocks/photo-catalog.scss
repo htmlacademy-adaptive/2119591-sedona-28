@@ -1,0 +1,23 @@
+.photo-catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photo-catalog__header {
+  margin-top: 37px;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.photo-catalog__list {
+  @include list-reset;
+}
+
+.photo-catalog__item {
+  padding-top: 25px;
+  padding-bottom: 28px;
+}
+
+.photo-catalog__image {
+  margin: 0;
+}

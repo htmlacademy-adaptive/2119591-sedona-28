@@ -1,0 +1,13 @@
+.field-text {
+  background-color: $bg-form-basic;
+  color: $text-accent;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba($text-accent, 0.3);
+  }
+}
