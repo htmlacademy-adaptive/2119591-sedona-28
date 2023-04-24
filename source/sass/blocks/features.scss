@@ -1,0 +1,12 @@
+.features {
+  background-color: $bg-basic;
+  padding: 23px 18px;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  text-align: left;
+}
