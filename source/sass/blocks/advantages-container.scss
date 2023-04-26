@@ -1,0 +1,9 @@
+.advantages-container {
+  padding: 37px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 41px;
+    min-height: 256px;
+  }
+}

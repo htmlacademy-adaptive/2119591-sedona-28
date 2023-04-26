@@ -1,4 +1,8 @@
 .description {
   color: $text-basic;
   text-transform: uppercase;
+
+  &--light {
+    color: $text-light;
+  }
 }
