@@ -2,8 +2,29 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .video-presentation__header {
-  margin: 17px 6px 38px;
+  margin: 17px auto 38px;
+  padding-left: 6px;
+  padding-right: 6px;
+  max-width: 445px;
+
+  @media (min-width: $tablet-width) {
+    margin: 55px auto 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 60px auto 65px;
+  }
 }

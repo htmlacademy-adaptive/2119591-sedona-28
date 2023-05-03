@@ -1,7 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__group {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 24px 0;
   border: none;
+  width: 100%;
 }
 
 .form__title {
@@ -14,7 +22,29 @@
 
 .form__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
+
+.form__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
 
 .form__button {
   padding: 16px 49px;

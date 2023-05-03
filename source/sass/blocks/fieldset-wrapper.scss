@@ -1,0 +1,11 @@
+.fieldset-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 58px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 100px;
+  }
+}

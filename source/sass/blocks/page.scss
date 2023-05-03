@@ -1,5 +1,9 @@
 .page {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-grey4;
+  }
 }
 
 .page__body {
