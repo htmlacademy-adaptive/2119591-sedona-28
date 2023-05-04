@@ -45,6 +45,11 @@
     background-color: $bg-accent1;
     color: $text-light;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &--town {
@@ -55,6 +60,10 @@
   &--bridge {
     grid-column: 1/-1;
     grid-row: 3/4;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row-reverse;
+    }
   }
 }
 

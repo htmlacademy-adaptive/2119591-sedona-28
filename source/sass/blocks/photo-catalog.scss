@@ -17,6 +17,16 @@
   max-width: 445px;
   margin: 37px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 85px;
+    margin-bottom: 90px;
+  }
 }
 
 .photo-catalog__list {

@@ -17,4 +17,14 @@
   margin: 36px auto 28px;
   max-width: 436px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+    margin-bottom: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 115px;
+    margin-bottom: 68px;
+  }
 }
