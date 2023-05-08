@@ -15,16 +15,17 @@
 }
 
 .video-presentation__header {
-  margin: 17px auto 38px;
-  padding-left: 6px;
-  padding-right: 6px;
+  margin: 0 auto;
+  padding: 17px 6px 24px;
   max-width: 445px;
 
   @media (min-width: $tablet-width) {
-    margin: 55px auto 65px;
+    padding-top: 55px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 60px auto 65px;
+    padding-top: 60px;
+    padding-bottom: 65px;
   }
 }

@@ -1,9 +1,29 @@
 .search {
   padding: 38px 20px 49px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.search__container {
+  margin: 0 auto;
+  max-width: 488px;
+}
+
+.search__title {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .search__button {
   display: block;
+  margin-top: 32px;
   padding: 16px;
 }

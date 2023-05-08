@@ -14,17 +14,19 @@
 }
 
 .review__header {
-  margin: 36px auto 28px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 14px;
   max-width: 436px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
-    margin-bottom: 108px;
+    padding-top: 64px;
+    padding-bottom: 94px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 115px;
-    margin-bottom: 68px;
+    padding-top: 115px;
+    padding-bottom: 54px;
   }
 }

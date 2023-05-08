@@ -9,18 +9,17 @@
   &--index {
     padding-top: 90px;
     padding-bottom: 85px;
-    background-image: url("../img/hero-divider.png"), url("../img/hero-index.jpg");
+    background-image: url("../img/hero-divider.svg"), url("../img/hero-index.jpg");
   }
 
   &--inner {
     padding-top: 52px;
     padding-bottom: 67px;
-    background-image: url("../img/hero-divider.png"), url("../img/hero-inner.jpg");
+    background-image: url("../img/hero-divider.svg"), url("../img/hero-inner.jpg");
   }
 }
 
 .hero__text {
   margin: 0 auto;
-  vertical-align: center;
   display: block;
 }
