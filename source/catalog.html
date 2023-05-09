@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,8 +20,8 @@
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link">Фото и видео</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--current">Фото и видео</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="form.html">Форма отзыва</a>
@@ -41,11 +42,11 @@
     <section class="photo-catalog">
       <header class="photo-catalog__header catalog-header">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
-        <p class="catalog-header__title title">Фото и видео</p>
+        <p class="catalog-header__title title title--main">Фото и видео</p>
         <p class="catalog-header__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </header>
       <ul class="photo-catalog__list">
-        <li class="photo-catalog__item card">
+        <li class="photo-catalog__item photo-catalog__item--large card">
           <figure class="photo-catalog__image photo">
             <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
             <figcaption>
@@ -54,7 +55,7 @@
             </figcaption>
           </figure>
           <div class="card__likes likes">
-            <button class="likes__button button" type="button">
+            <button class="likes__button" type="button">
               <span class="likes__counter">1350</span>
             </button>
           </div>
@@ -68,7 +69,7 @@
             </figcaption>
           </figure>
           <div class="card__likes likes">
-            <button class="likes__button button" type="button">
+            <button class="likes__button" type="button">
               <span class="likes__counter">143</span>
             </button>
           </div>
@@ -82,7 +83,7 @@
             </figcaption>
           </figure>
           <div class="card__likes likes">
-            <button class="likes__button button" type="button">
+            <button class="likes__button" type="button">
               <span class="likes__counter">96</span>
             </button>
           </div>
@@ -96,7 +97,7 @@
             </figcaption>
           </figure>
           <div class="card__likes likes">
-            <button class="likes__button button" type="button">
+            <button class="likes__button" type="button">
               <span class="likes__counter">254</span>
             </button>
           </div>
@@ -106,7 +107,7 @@
     <section class="video-presentation">
       <header class="video-presentation__header presentation-header">
         <h2 class="visually-hidden">Видео-презентация Седоны</h2>
-        <p class="presentation-header__title title">Все еще сомневаетесь?</p>
+        <p class="presentation-header__title title title--main">Все еще сомневаетесь?</p>
         <p class="presentation-header__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </header>
       <div class="video-presentation__wrapper">
@@ -116,7 +117,7 @@
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Контактная информация</h2>
-    <p class="main-footer__title title">#visitsedona</p>
+    <p class="main-footer__hashtag">#visitsedona</p>
     <div class="main-footer__socials socials">
       <ul class="socials__list">
         <li class="socials__item">

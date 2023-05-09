@@ -9,6 +9,7 @@ $brown: #766357;
 $light-grey1:#eeeeee;
 $light-grey2:#eaeaea;
 $light-grey3:#e5e5e5;
+$light-grey4:#f2f2f2;
 $grey: #e6e6e6;
 
 // шрифт
@@ -24,3 +25,9 @@ $bg-accent2: $light-grey1;
 $bg-form-basic: $light-grey3;
 $bg-form-accent: $grey;
 $bg-hero: $dark-blue;
+$bg-page: $light-grey4;
+
+// вьюпорты
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;

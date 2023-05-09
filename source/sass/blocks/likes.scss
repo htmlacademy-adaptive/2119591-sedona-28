@@ -1,3 +1,12 @@
 .likes__counter {
   font-weight: 700;
 }
+
+.likes__button {
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  color: $text-accent;
+}

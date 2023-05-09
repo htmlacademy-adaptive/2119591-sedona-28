@@ -1,0 +1,14 @@
+.button-wrapper {
+  margin: 0 auto;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 768px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 64px;
+  }
+}

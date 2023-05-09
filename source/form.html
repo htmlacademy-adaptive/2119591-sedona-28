@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,8 +23,8 @@
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a class="main-navigation__link">Форма отзыва</a>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--current">Форма отзыва</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="#">HTML ACADEMY</a>
@@ -40,26 +41,28 @@
     </section>
     <section class="review">
       <header class="review__header review-header">
-        <h2 class="review-header__title title">Оставьте свой отзыв</h2>
+        <h2 class="review-header__title title title--main">Оставьте свой отзыв</h2>
         <p class="review-header__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
       <form class="review__form form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form__group">
-          <legend class="form__title title">Представьтесь:</legend>
-          <label class="form__label" for="name">Имя*:</label>
-          <input class="form__field field-text" type="text" name="name" id="name" placeholder="Имя" value="Пётр" required>
-          <label class="form__label" for="surname">Фамилия*:</label>
-          <input class="form__field field-text" type="text" name="surname" id="surname" placeholder="Фамилия" value="Пустота" required>
-          <label class="form__label" for="patronymic">Отчество:</label>
-          <input class="form__field field-text" type="text" name="patronymic" id="patronymic" placeholder="Отчество" value="Викторович">
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__title title">Контактная информация:</legend>
-          <label class="form__label" for="phone">Контактный телефон*:</label>
-          <input class="form__field field-text" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-          <label class="form__label" for="email">Электронная почта*:</label>
-          <input class="form__field field-text" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-        </fieldset>
+        <div class="fieldset-wrapper">
+          <fieldset class="form__group">
+            <legend class="form__title title">Представьтесь:</legend>
+            <label class="form__label" for="name">Имя*:</label>
+            <input class="form__field field-text" type="text" name="name" id="name" placeholder="Имя" value="Пётр" required>
+            <label class="form__label" for="surname">Фамилия*:</label>
+            <input class="form__field field-text" type="text" name="surname" id="surname" placeholder="Фамилия" value="Пустота" required>
+            <label class="form__label" for="patronymic">Отчество:</label>
+            <input class="form__field field-text" type="text" name="patronymic" id="patronymic" placeholder="Отчество" value="Викторович">
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__title title">Контактная информация:</legend>
+            <label class="form__label" for="phone">Контактный телефон*:</label>
+            <input class="form__field field-text" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+            <label class="form__label" for="email">Электронная почта*:</label>
+            <input class="form__field field-text" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </fieldset>
+        </div>
         <fieldset class="form__group">
           <legend class="form__title title">Ваше общее впечатление:</legend>
           <ul class="form__list">
@@ -114,16 +117,18 @@
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__title title">Опишите свои эмоции:</legend>
-          <textarea class="form__field field-text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__field form__field--wide field-text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить отзыв</button>
-        <small class="form__legend">* — обязательные поля</small>
+        <div class="button-wrapper">
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <small class="form__legend">* — обязательные поля</small>
+        </div>
       </form>
     </section>
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Контактная информация</h2>
-    <p class="main-footer__title title">#visitsedona</p>
+    <p class="main-footer__hashtag">#visitsedona</p>
     <div class="main-footer__socials socials">
       <ul class="socials__list">
         <li class="socials__item">

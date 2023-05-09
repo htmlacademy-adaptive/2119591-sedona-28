@@ -8,4 +8,24 @@
   &--big {
     font-size: 21px;
   }
+
+  &--light {
+    color: $text-light;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 21px;
+
+    &--big {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &--main {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
 }

@@ -1,11 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__group {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 24px 0;
   border: none;
+  width: 100%;
 }
 
 .form__title {
   text-align: center;
+  max-width: 300px;
 }
 
 .form__label {
@@ -14,13 +23,57 @@
 
 .form__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.form__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.form__field {
+  margin: 0 auto;
+  padding: 16px;
+  width: 100%;
+
+  &--wide {
+    min-height: 150px;
+    max-width: 768px;
+
+    @media (min-width: $desktop-width) {
+      min-height: 160px;
+    }
+  }
 }
 
 .form__button {
   padding: 16px 49px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .form__legend {
   color: rgba($text-basic, 0.6);
   font-size: 12px;
+  text-transform: uppercase;
+  margin-left: auto;
+  align-self: flex-end;
 }
